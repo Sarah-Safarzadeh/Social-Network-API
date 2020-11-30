@@ -23,6 +23,10 @@ router
     .put(updateUser)
     .delete(deleteUser);
 
-// ****need to set up post and delete for friends*****
+// POST and DELETE friends
+router
+    .route('/:id/friends/:friendId')
+    .post(addFriend)
+    .delete(removeFriend);
 
 mondule.exports = router;
