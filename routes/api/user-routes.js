@@ -29,4 +29,4 @@ router
     .post(addFriend)
     .delete(removeFriend);
 
-mondule.exports = router;
+module.exports = router;
